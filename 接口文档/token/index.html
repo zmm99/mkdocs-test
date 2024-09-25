@@ -292,7 +292,7 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      银丰基因开放平台接口文档
+      开放平台接口文档
     </span>
   </a>
   
@@ -312,39 +312,6 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       版本记录
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#baseurl" class="md-nav__link">
-    <span class="md-ellipsis">
-      BaseUrl
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api" class="md-nav__link">
-    <span class="md-ellipsis">
-      二、API
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="二、API">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#token" class="md-nav__link">
-    <span class="md-ellipsis">
-      获取Token
     </span>
   </a>
   
@@ -557,7 +524,7 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      银丰基因开放平台接口文档
+      开放平台接口文档
     </span>
   </a>
   
@@ -577,39 +544,6 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       版本记录
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#baseurl" class="md-nav__link">
-    <span class="md-ellipsis">
-      BaseUrl
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api" class="md-nav__link">
-    <span class="md-ellipsis">
-      二、API
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="二、API">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#token" class="md-nav__link">
-    <span class="md-ellipsis">
-      获取Token
     </span>
   </a>
   
@@ -668,9 +602,9 @@
                   
 
 
-<h3 id="_1">银丰基因开放平台接口文档</h3>
+<h3 id="_1">开放平台接口文档</h3>
 <h1 id="_2">一、前言</h1>
-<p>​   本文档为银丰基因对接外部公司接口标准，默认数据交互格式为"json"，请严格按照文档要求进行使用。</p>
+<p>​   本文档为对接外部公司接口标准，默认数据交互格式为"json"，请严格按照文档要求进行使用。</p>
 <h3 id="_3">版本记录</h3>
 <table>
 <thead>
@@ -685,62 +619,12 @@
 <tr>
 <td style="text-align: center;">2023-11-16</td>
 <td style="text-align: center;">V1.0</td>
-<td style="text-align: center;">张传强</td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;">1.初次添加</td>
 </tr>
 </tbody>
 </table>
-<h3 id="baseurl">BaseUrl</h3>
-<p>​   开发调试：https://ittest.yinfenggene.com:20001</p>
-<p>​   测试环境：https://ittest.yinfenggene.com:20001</p>
-<p>​   生产环境：https://api.yinfenggene.com 内网：http://172.21.190.69</p>
-<hr />
-<h1 id="api">二、API</h1>
-<h3 id="token">获取Token</h3>
-<ul>
-<li>获取调用接口凭证</li>
-<li>JWT授权(数据在请求头的"Authorization"中) ,格式"Bearer {token}" 即可,注意两者之间有空格</li>
-<li>本文档所有接口(获取token接口除外)都需携带token才可访问</li>
-</ul>
-<blockquote>
-<p>URI：auth/token/app</p>
-<p>请求方式：</p>
-</blockquote>
-<p>​   GET</p>
-<blockquote>
-<p>请求参数：</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">参数</th>
-<th style="text-align: center;">类型</th>
-<th style="text-align: center;">是否必填</th>
-<th style="text-align: center;">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">appId</td>
-<td style="text-align: center;">string</td>
-<td style="text-align: center;">是</td>
-<td style="text-align: center;">调用方的AppId</td>
-</tr>
-<tr>
-<td style="text-align: center;">appSecret</td>
-<td style="text-align: center;">string</td>
-<td style="text-align: center;">是</td>
-<td style="text-align: center;">密钥</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>请求示例：</p>
-</blockquote>
-<p>GET http://www.xxx.com/auth/token/app?appId=xxx&amp;appSecret=xxx</p>
-<blockquote>
-<p>响应结果示例：</p>
-</blockquote>
+<blockquote></blockquote>
 <pre><code>{
   &quot;code&quot;: 1,
   &quot;message&quot;: &quot;成功&quot;,

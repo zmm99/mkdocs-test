@@ -313,7 +313,7 @@
         <li class="md-nav__item">
   <a href="#oss-" class="md-nav__link">
     <span class="md-ellipsis">
-      银丰基因OSS文件服务 - 接口文档
+      OSS文件服务 - 接口文档
     </span>
   </a>
   
@@ -333,15 +333,6 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       版本记录
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#baseurl" class="md-nav__link">
-    <span class="md-ellipsis">
-      BaseUrl
     </span>
   </a>
   
@@ -414,15 +405,6 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       鉴权方式
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      参数说明
     </span>
   </a>
   
@@ -581,7 +563,7 @@
         <li class="md-nav__item">
   <a href="#oss-" class="md-nav__link">
     <span class="md-ellipsis">
-      银丰基因OSS文件服务 - 接口文档
+      OSS文件服务 - 接口文档
     </span>
   </a>
   
@@ -601,15 +583,6 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       版本记录
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#baseurl" class="md-nav__link">
-    <span class="md-ellipsis">
-      BaseUrl
     </span>
   </a>
   
@@ -687,15 +660,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      参数说明
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -716,9 +680,9 @@
                   
 
 
-<h3 id="oss-">银丰基因OSS文件服务 - 接口文档</h3>
+<h3 id="oss-">OSS文件服务 - 接口文档</h3>
 <h1 id="_1">一、前言</h1>
-<p>​   本文档为银丰基因OSS文件服务接口标准，默认数据交互格式为"json"，请严格按照文档要求进行使用。</p>
+<p>​   本文档为OSS文件服务接口标准，默认数据交互格式为"json"，请严格按照文档要求进行使用。</p>
 <h3 id="_2">版本记录</h3>
 <table>
 <thead>
@@ -733,15 +697,11 @@
 <tr>
 <td style="text-align: center;">2023-11-16</td>
 <td style="text-align: center;">V1.0</td>
-<td style="text-align: center;">张传强</td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;">1.初次添加</td>
 </tr>
 </tbody>
 </table>
-<h3 id="baseurl">BaseUrl</h3>
-<p>​   开发调试：https://ittest.yfgene.net:1507</p>
-<p>​   测试环境：https://ittest.yfgene.net:1507</p>
-<p>​   生产环境：https://api.yinfenggene.com 内网：http://172.21.190.69</p>
 <hr />
 <h1 id="api">二、API</h1>
 <h3 id="token">获取Token</h3>
@@ -754,72 +714,25 @@
 <p>URI：auth/token/app</p>
 <p>请求方式：</p>
 </blockquote>
-<p>​   GET</p>
-<blockquote>
-<p>请求参数：</p>
-</blockquote>
+<p>​   </p>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;">参数</th>
-<th style="text-align: center;">类型</th>
-<th style="text-align: center;">是否必填</th>
-<th style="text-align: center;">说明</th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">appId</td>
-<td style="text-align: center;">string</td>
-<td style="text-align: center;">是</td>
-<td style="text-align: center;">调用方的AppId</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
-<td style="text-align: center;">appSecret</td>
-<td style="text-align: center;">string</td>
-<td style="text-align: center;">是</td>
-<td style="text-align: center;">密钥</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>请求示例：</p>
-</blockquote>
-<p>GET http://www.xxx.com/auth/token/app?appId=xxx&amp;appSecret=xxx</p>
-<blockquote>
-<p>响应结果示例：</p>
-</blockquote>
-<pre><code>{
-  &quot;code&quot;: 1,
-  &quot;message&quot;: &quot;成功&quot;,
-  &quot;data&quot;: {
-    &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOiIxNjY0MzQ0MzU1IiwiZXhwIjoxNjY0MzQ0Mzg1LCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiMjY2OGNmZWU4NTQ4NDQ0YmI1ZjdkZWFkNGUxMzU2ZTYiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IlVZMzh5eXIvbllNdHMrK2o4L2M3VFpsNFBjaXFUNGhHRi9WMFhkTnAwcEU9IiwiaXNzIjoiWUZKd3RJc3N1ZXIiLCJhdWQiOiJZRkN1c3RvbWVyIn0.mlrDRLPpmDAzgnlYddAWSHOArDlaNVyCMLJO4Lnnv8A&quot;,
-    &quot;expirationTime&quot;: &quot;2022-09-28 13:53:05&quot;
-  },
-  &quot;timestamp&quot;: &quot;1664344355485&quot;
-}
-</code></pre>
-<blockquote>
-<p>返回Data参数：</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">参数</th>
-<th style="text-align: center;">类型</th>
-<th style="text-align: center;">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">token</td>
-<td style="text-align: center;">string</td>
-<td style="text-align: center;">token数据</td>
-</tr>
-<tr>
-<td style="text-align: center;">expirationTime</td>
-<td style="text-align: center;">datetime</td>
-<td style="text-align: center;">token过期时间，yyyy-MM-dd HH:mm:ss格式。</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
 </tr>
 </tbody>
 </table>
@@ -827,13 +740,8 @@
 <h2 id="oss">OSS文件接口</h2>
 <h3 id="oss_1">获取OSS上传链接</h3>
 <ul>
-<li>获取OSS上传链接及授权策略</li>
+<li></li>
 </ul>
-<blockquote>
-<p>URI：ossfile/link/upload/single</p>
-<p>请求方式：</p>
-</blockquote>
-<p>GET https://www.xxx.com/ossfile/link/upload/single</p>
 <blockquote>
 <p>请求参数：</p>
 </blockquote>
@@ -928,156 +836,99 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: center;">参数</th>
-<th style="text-align: center;">类型</th>
-<th style="text-align: center;">说明</th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">fileId</td>
-<td style="text-align: center;">long</td>
-<td style="text-align: center;">文件ID,若为0，则需要使用uploadPolicy上传文件，若不为0，说明文件已存在，无需上传</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
-<td style="text-align: center;">uploadPolicy</td>
-<td style="text-align: center;">array</td>
-<td style="text-align: center;">上传授权策略,数据为上传oss所必须的授权策略，host为上传地址，请使用formdata上传，上传谓词为“post”，需注意的是file一定放到最后，如下所示</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
 </tr>
 </tbody>
 </table>
-<p><img alt="image-20231205143101337" src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231205143101337.png" /></p>
 <hr />
 <hr />
 <h1 id="_3">附录</h1>
 <h3 id="_4">鉴权方式</h3>
 <p>​   本系统使用鉴权方式为"JWT"，请求是需要在请求头的"Authorization"传递token(格式为"Bearer {token}"，需注意两者之间有空格) ，本文档所有接口(获取token接口除外)都需携带token才可访问。</p>
-<blockquote>
-<p>Header：</p>
-</blockquote>
+<blockquote></blockquote>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;">参数</th>
-<th style="text-align: center;">类型</th>
-<th style="text-align: center;">说明</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">Authorization</td>
-<td style="text-align: center;">string</td>
-<td style="text-align: center;">例如token为“qwer”，那么值应为"Bearer qwer"</td>
-</tr>
-</tbody>
-</table>
-<h3 id="_5">参数说明</h3>
-<blockquote>
-<p>全局返回参数说明：</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">参数</th>
-<th style="text-align: center;">类型</th>
-<th style="text-align: center;">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">code</td>
-<td style="text-align: center;">int</td>
-<td style="text-align: center;">返回码,成功为"1"</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td style="text-align: center;">message</td>
-<td style="text-align: center;">string</td>
-<td style="text-align: center;">返回信息</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td style="text-align: center;">data</td>
-<td style="text-align: center;">object</td>
-<td style="text-align: center;">返回数据</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td style="text-align: center;">timestamp</td>
-<td style="text-align: center;">long</td>
-<td style="text-align: center;">13位时间戳，例如"1667351778075"</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>全局部分错误码说明：</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>错误码</th>
-<th>错误说明</th>
-<th>响应码</th>
-<th>排查方法</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>请求成功</td>
-<td>200</td>
-<td>接口调用成功</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td>-1</td>
-<td>系统繁忙</td>
-<td>200</td>
-<td>服务器暂不可用或执行失败</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td>-20</td>
-<td>未知错误</td>
-<td>200</td>
-<td>发生未知错误</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td>-30</td>
-<td>服务器异常</td>
-<td>200</td>
-<td>服务器内部异常</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td>404</td>
-<td>无此资源</td>
-<td>200</td>
-<td>服务器查无此资源</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td>10003</td>
-<td>Token不合法</td>
-<td>200</td>
-<td>Token格式错误、为空或者被内容被篡改</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td>10002</td>
-<td>Token已过期</td>
-<td>200</td>
-<td>Token过期了，请重新获取</td>
-</tr>
-<tr>
-<td>16000</td>
-<td>API功能未授权</td>
-<td>200</td>
-<td>无权访问API</td>
-</tr>
-<tr>
-<td>15000</td>
-<td>用户不存在</td>
-<td>200</td>
-<td>用户不存在</td>
-</tr>
-<tr>
-<td>12004</td>
-<td>模型绑定失败</td>
-<td>200</td>
-<td>请求时的参数格式错误，检查请求的参数</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
