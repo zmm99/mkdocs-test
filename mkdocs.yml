@@ -1,0 +1,22 @@
+site_name: Zcq Docs
+theme:
+  # name: mkdocs
+  # name: readthedocs
+  name: material
+  language: zh
+nav: 
+    - 主页: index.md 
+    - 接口文档: 
+        - token: 接口文档/token.md
+        - OSS: 接口文档/oss.md
+        - 第三方: 
+            - 达瑞: 接口文档/第三方/达瑞.md 
+            - 龙腾: 接口文档/第三方/龙腾.md
+    - 关于我: about.md
+    
+plugins:
+    - search:
+        lang:
+            - en
+            - ja
+        separator: '[\s\-\.]+'
