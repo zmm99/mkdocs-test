@@ -1,0 +1,1262 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../oss/">
+      
+      
+        <link rel="next" href="../%E9%BE%99%E8%85%BE/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.36">
+    
+    
+      
+        <title>达瑞 - Zcq Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.06209087.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#-" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Zcq Docs" class="md-header__button md-logo" aria-label="Zcq Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Zcq Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              达瑞
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Zcq Docs" class="md-nav__button md-logo" aria-label="Zcq Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Zcq Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    主页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    接口文档
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            接口文档
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../token/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    token
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oss/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OSS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    第三方
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            第三方
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    达瑞
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    达瑞
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      银丰基因省妇幼耳聋(达瑞) - 接口文档
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、前言
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、前言">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      版本记录
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#baseurl" class="md-nav__link">
+    <span class="md-ellipsis">
+      BaseUrl
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      提交样本信息
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      提交报告结果
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      附录
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="附录">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      签名规则
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      参数说明
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%BE%99%E8%85%BE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    龙腾
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    关于我
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      银丰基因省妇幼耳聋(达瑞) - 接口文档
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、前言
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、前言">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      版本记录
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#baseurl" class="md-nav__link">
+    <span class="md-ellipsis">
+      BaseUrl
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      提交样本信息
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      提交报告结果
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      附录
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="附录">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      签名规则
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      参数说明
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h3 id="-">银丰基因省妇幼耳聋(达瑞) - 接口文档</h3>
+<h1 id="_1">一、前言</h1>
+<p>​   本文档为银丰基因接口标准，默认数据交互格式为"json"，请严格按照文档要求进行使用。</p>
+<h3 id="_2">版本记录</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">日期</th>
+<th style="text-align: center;">版本号</th>
+<th style="text-align: center;">修订人</th>
+<th style="text-align: center;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">2023-04-28</td>
+<td style="text-align: center;">V1.0</td>
+<td style="text-align: center;">张传强</td>
+<td style="text-align: center;">初次编写</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-05-29</td>
+<td style="text-align: center;">V1.1</td>
+<td style="text-align: center;">张传强</td>
+<td style="text-align: center;">1.修改BaseUrl；2.错别字修复，header时间戳接收字段由“appSecret”改为“timestamp”；3.新增提交报告结果接口</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023-05-29</td>
+<td style="text-align: center;">V1.2</td>
+<td style="text-align: center;">张传强</td>
+<td style="text-align: center;">提交报告结果接口修改返回数据格式</td>
+</tr>
+</tbody>
+</table>
+<h3 id="baseurl">BaseUrl</h3>
+<p>​   正式环境：http://api.yinfenggene.com:9114</p>
+<hr />
+<h1 id="api">二、API</h1>
+<h3 id="_3">提交样本信息</h3>
+<ul>
+<li>提交样本信息</li>
+</ul>
+<blockquote>
+<p>URI：api/sample</p>
+<p>请求方式：</p>
+</blockquote>
+<p>​   POST</p>
+<blockquote>
+<p>请求参数：</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">参数</th>
+<th style="text-align: center;">类型</th>
+<th style="text-align: center;">是否必填</th>
+<th style="text-align: center;">传参方式</th>
+<th style="text-align: center;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">appId</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">header</td>
+<td style="text-align: center;">appId</td>
+</tr>
+<tr>
+<td style="text-align: center;">signature</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">header</td>
+<td style="text-align: center;">加密签名，规则请看附录</td>
+</tr>
+<tr>
+<td style="text-align: center;">timestamp</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">header</td>
+<td style="text-align: center;">13位时间戳</td>
+</tr>
+<tr>
+<td style="text-align: center;">samplekey</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">主键</td>
+</tr>
+<tr>
+<td style="text-align: center;">samplecode</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">样本编号</td>
+</tr>
+<tr>
+<td style="text-align: center;">inspectionunit</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">送检单位</td>
+</tr>
+<tr>
+<td style="text-align: center;">barcode</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">条码号</td>
+</tr>
+<tr>
+<td style="text-align: center;">sampletype</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">样本类型</td>
+</tr>
+<tr>
+<td style="text-align: center;">name</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">姓名</td>
+</tr>
+<tr>
+<td style="text-align: center;">sex</td>
+<td style="text-align: center;">int</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">性别,0：未知；1：男；2：女；9：未说明</td>
+</tr>
+<tr>
+<td style="text-align: center;">collectiontime</td>
+<td style="text-align: center;">datetime</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">采集时间,yyyy-MM-dd HH:mm:ss</td>
+</tr>
+<tr>
+<td style="text-align: center;">telephone</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">联系电话</td>
+</tr>
+<tr>
+<td style="text-align: center;">address</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">联系地址</td>
+</tr>
+<tr>
+<td style="text-align: center;">submittingdoctor</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">送检医生</td>
+</tr>
+<tr>
+<td style="text-align: center;">birthday</td>
+<td style="text-align: center;">datetime</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">出生日期,yyyy-MM-dd HH:mm:ss</td>
+</tr>
+<tr>
+<td style="text-align: center;">testnumber</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">实验编号</td>
+</tr>
+<tr>
+<td style="text-align: center;">mothername</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">母亲姓名</td>
+</tr>
+<tr>
+<td style="text-align: center;">motherID</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">母亲身份号码</td>
+</tr>
+<tr>
+<td style="text-align: center;">weight</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">体重</td>
+</tr>
+<tr>
+<td style="text-align: center;">gestationalweek</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">孕周</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>请求body示例：</p>
+<p>注意：支持多个样本信息提交，数据为数组</p>
+</blockquote>
+<pre><code>[
+  {
+    &quot;samplekey&quot;: &quot;string&quot;,
+    &quot;samplecode&quot;: &quot;string&quot;,
+    &quot;inspectionunit&quot;: &quot;string&quot;,
+    &quot;barcode&quot;: &quot;string&quot;,
+    &quot;sampletype&quot;: &quot;string&quot;,
+    &quot;name&quot;: &quot;string&quot;,
+    &quot;sex&quot;: 0,
+    &quot;collectiontime&quot;: &quot;2023-04-28 09:53:56&quot;,
+    &quot;telephone&quot;: &quot;string&quot;,
+    &quot;address&quot;: &quot;string&quot;,
+    &quot;submittingdoctor&quot;: &quot;string&quot;,
+    &quot;birthday&quot;: &quot;2023-04-28 09:53:56&quot;,
+    &quot;testnumber&quot;: &quot;string&quot;,
+    &quot;mothername&quot;: &quot;string&quot;,
+    &quot;motherID&quot;: &quot;string&quot;,
+    &quot;weight&quot;: &quot;string&quot;,
+    &quot;gestationalweek&quot;: &quot;string&quot;
+  }
+]
+</code></pre>
+<blockquote>
+<p>请求示例：</p>
+</blockquote>
+<p>POST http://api.yinfenggene.com:9114/api/sample</p>
+<blockquote>
+<p>响应结果示例：</p>
+</blockquote>
+<pre><code>{
+    &quot;code&quot;: 1,
+    &quot;message&quot;: &quot;成功&quot;,
+    &quot;data&quot;: null,
+    &quot;timestamp&quot;: 1626241907175
+}
+</code></pre>
+<hr />
+<h3 id="_4">提交报告结果</h3>
+<ul>
+<li>提交报告结果</li>
+</ul>
+<blockquote>
+<p>URI：api/sample/report</p>
+<p>请求方式：</p>
+</blockquote>
+<p>​   POST</p>
+<blockquote>
+<p>请求参数：</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">参数</th>
+<th style="text-align: center;">类型</th>
+<th style="text-align: center;">是否必填</th>
+<th style="text-align: center;">传参方式</th>
+<th style="text-align: center;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">appId</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">header</td>
+<td style="text-align: center;">appId</td>
+</tr>
+<tr>
+<td style="text-align: center;">signature</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">header</td>
+<td style="text-align: center;">加密签名，规则请看附录</td>
+</tr>
+<tr>
+<td style="text-align: center;">timestamp</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">header</td>
+<td style="text-align: center;">13位时间戳</td>
+</tr>
+<tr>
+<td style="text-align: center;">sampleId</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">样本编号</td>
+</tr>
+<tr>
+<td style="text-align: center;">reportState</td>
+<td style="text-align: center;">int</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">样本报告状态。当样本正常生成报告，此状态为200。<br/>当样本下机数据有缺失，报告状态为500，此状态下没有报告。</td>
+</tr>
+<tr>
+<td style="text-align: center;">message</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">样本生成报告过程中的提示。与reportSate 对应<br/>当reportState=200：“样本已生成报告”<br/>当reportState=500：“数据缺失，需要重做”</td>
+</tr>
+<tr>
+<td style="text-align: center;">reportDate</td>
+<td style="text-align: center;">String</td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">报告日期</td>
+</tr>
+<tr>
+<td style="text-align: center;">abnormal</td>
+<td style="text-align: center;">int</td>
+<td style="text-align: center;">否</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">有无异常。0：无；1：有</td>
+</tr>
+<tr>
+<td style="text-align: center;">resultTips</td>
+<td style="text-align: center;">String</td>
+<td style="text-align: center;">否</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">报告内的结果提示</td>
+</tr>
+<tr>
+<td style="text-align: center;">reportFile</td>
+<td style="text-align: center;">String</td>
+<td style="text-align: center;">否</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">报告文件PDF 的base64 字符串</td>
+</tr>
+<tr>
+<td style="text-align: center;">data</td>
+<td style="text-align: center;">Array</td>
+<td style="text-align: center;">否</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">异常位点信息。数组形式</td>
+</tr>
+<tr>
+<td style="text-align: center;">data.mutationPos</td>
+<td style="text-align: center;">String</td>
+<td style="text-align: center;">否</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">突变位点</td>
+</tr>
+<tr>
+<td style="text-align: center;">data.gene</td>
+<td style="text-align: center;">String</td>
+<td style="text-align: center;">否</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">相关基因</td>
+</tr>
+<tr>
+<td style="text-align: center;">data.testResult</td>
+<td style="text-align: center;">String</td>
+<td style="text-align: center;">否</td>
+<td style="text-align: center;">body</td>
+<td style="text-align: center;">检测结果</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>请求body示例：</p>
+<p>注意：支持多个报告数据提交，数据为数组</p>
+</blockquote>
+<pre><code>[
+    {
+        &quot;sampleId&quot;: &quot;sample1&quot;,
+        &quot;reportState&quot;: 200,
+        &quot;message&quot;: &quot;样本已生成报告&quot;,
+        &quot;reportDate&quot;: &quot;2023-05-24&quot;,
+        &quot;abnormal&quot;: 1,
+        &quot;resultTips&quot;: &quot;GJB2：c.299_300delAT 杂合突变；建议至济宁市妇幼保健 院听力障碍筛查诊断中心进行咨询。&quot;,
+        &quot;reportFile&quot;: &quot;base64 of pdf...&quot;,
+        &quot;data&quot;: [
+            {
+                &quot;mutationPos&quot;: &quot;c.299_300delAT&quot;,
+                &quot;gene&quot;: &quot;GJB2&quot;,
+                &quot;testResult&quot;: &quot;杂合突变&quot;
+            }
+        ]
+    },
+    {
+        &quot;sampleId&quot;: &quot;sample2&quot;,
+        &quot;reportState&quot;: 200,
+        &quot;message&quot;: &quot;样本已生成报告&quot;,
+        &quot;reportDate&quot;: &quot;2023-05-24&quot;,
+        &quot;abnormal&quot;: 0,
+        &quot;resultTips&quot;: &quot;以上检测未发现受检者携带中国人最常见的4 个致聋基因的 20 个热点突变，建议至济宁市妇幼保健院听力障碍筛查诊断中心进行咨询。&quot;,
+        &quot;reportFile&quot;: &quot;base64 of pdf...&quot;,
+        &quot;data&quot;: []
+    },
+    {
+        &quot;sampleId&quot;: &quot;sample3&quot;,
+        &quot;reportState&quot;: 500,
+        &quot;message&quot;: &quot;数据缺失，需要重做&quot;,
+        &quot;reportDate&quot;: &quot;2023-05-24&quot;,
+        &quot;abnormal&quot;: 0,
+        &quot;resultTips&quot;: &quot;&quot;,
+        &quot;reportFile&quot;: &quot;&quot;,
+        &quot;data&quot;: []
+    }
+]
+</code></pre>
+<blockquote>
+<p>请求示例：</p>
+</blockquote>
+<p>POST http://api.yinfenggene.com:9114/api/sample/report</p>
+<blockquote>
+<p>响应结果示例：</p>
+</blockquote>
+<pre><code>{
+    &quot;code&quot;: 1,
+    &quot;message&quot;: &quot;成功&quot;,
+    &quot;data&quot;: null,
+    &quot;timestamp&quot;: 1626241907175
+}
+</code></pre>
+<hr />
+<h1 id="_5">附录</h1>
+<h3 id="_6">签名规则</h3>
+<blockquote>
+<p>Header：</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">参数</th>
+<th style="text-align: center;">类型</th>
+<th style="text-align: center;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">appId</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">appId</td>
+</tr>
+<tr>
+<td style="text-align: center;">signature</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">"appId={appId}&amp;appSecret={appSecret}&amp;timestamp={timestamp}"字符串MD5加密（大写去"-"），例如MD5("appId=xxx&amp;appSecret=xxxxxx&amp;timestamp=1626241907175")</td>
+</tr>
+<tr>
+<td style="text-align: center;">timestamp</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">13位时间戳</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_7">参数说明</h3>
+<blockquote>
+<p>全局返回参数说明：</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">参数</th>
+<th style="text-align: center;">类型</th>
+<th style="text-align: center;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">code</td>
+<td style="text-align: center;">int</td>
+<td style="text-align: center;">返回码,成功为"1"</td>
+</tr>
+<tr>
+<td style="text-align: center;">message</td>
+<td style="text-align: center;">string</td>
+<td style="text-align: center;">返回信息</td>
+</tr>
+<tr>
+<td style="text-align: center;">data</td>
+<td style="text-align: center;">object</td>
+<td style="text-align: center;">返回数据</td>
+</tr>
+<tr>
+<td style="text-align: center;">timestamp</td>
+<td style="text-align: center;">long</td>
+<td style="text-align: center;">13位时间戳，例如"1667351778075"</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>全局部分错误码说明：</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>错误码</th>
+<th>错误说明</th>
+<th>响应码</th>
+<th>排查方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>请求成功</td>
+<td>200</td>
+<td>接口调用成功</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>其他均为失败</td>
+<td>200</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>
